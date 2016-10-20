@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "Shortlink Extender",
+    "version": "0.1",
+
+    "author": "StuartD - www.stuartd.co.uk",  
+    "description": "A Google Chrome extension to extend the shortlinks such as bit.ly into their actual endpoint links.",
+    
+    "icons": {
+        "128": "images/128-logo.png"
+    },
+    
+    "content_scripts": [
+        {
+            "matches": [
+                "<all_urls>"
+            ],
+            "js": ["extender.js"]
+        }
+    ]
+}
